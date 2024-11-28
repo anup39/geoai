@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from 'react';
-import MainComponent from './map';
+// import MainComponent from './map';
 
-export default function DashboardLayout({ children }) {
+export default function DashboardLayout() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -129,7 +129,7 @@ export default function DashboardLayout({ children }) {
         className={`absolute top-16 bottom-0 right-0 bg-gray-50 dark:bg-gray-700 transition-all duration-300
           ${isSidebarExpanded ? 'left-64' : 'left-20'} p-4 overflow-auto`}
       >
-        <MainComponent/>
+        {/* <MainComponent/> */}
       </main>
     </div>
   );

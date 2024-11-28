@@ -8,7 +8,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 const MAPTILER_ACCESS_TOKEN = 'QQtkGFQfXNO1P2aEiQ8D';
 
-const MainComponent = ({ children, isSidebarExpanded }) => {
+const MainComponent = () => {
   const initialViewState = {
     longitude: -122.4,
     latitude: 37.8,
